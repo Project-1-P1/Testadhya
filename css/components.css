@@ -1,0 +1,134 @@
+.btn {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: calc(var(--spacing-base) * 0.75) calc(var(--spacing-base) * 1.5);
+
+  background-color: var(--color-primary);
+
+  color: var(--color-primary-contrast);
+
+  border-radius: var(--border-radius-base);
+
+  border: none;
+
+  cursor: pointer;
+
+  transition:
+
+    opacity var(--animation-duration) var(--animation-easing),
+
+    transform var(--animation-duration) var(--animation-easing);
+
+}
+
+.btn:hover {
+
+  opacity: 0.9;
+
+  transform: translateY(-1px);
+
+}
+
+.nav-menu {
+
+  display: flex;
+
+  gap: var(--spacing-base);
+
+}
+
+.nav-link {
+
+  color: var(--color-text-main);
+
+  font-weight: 500;
+
+}
+
+.countdown-wrapper {
+
+  display: flex;
+
+  gap: var(--spacing-base);
+
+  justify-content: center;
+
+}
+
+.countdown-unit {
+
+  background-color: var(--color-surface);
+
+  padding: var(--spacing-base);
+
+  border: 1px solid var(--color-border);
+
+  border-radius: var(--border-radius-base);
+
+  text-align: center;
+
+}
+
+.countdown-value {
+
+  font-size: 2rem;
+
+  color: var(--color-primary);
+
+  font-family: var(--font-family-heading);
+
+}
+.card,
+
+.event-item {
+
+  background-color: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+
+  border-radius: var(--border-radius-base);
+
+  overflow: hidden;
+
+}
+
+.card-content {
+
+  padding: var(--spacing-base);
+
+}
+
+.form-group {
+
+  margin-bottom: var(--spacing-base);
+
+}
+
+.form-control {
+
+  width: 100%;
+
+  padding: calc(var(--spacing-base) * 0.5);
+
+  border: 1px solid var(--color-border);
+
+  border-radius: var(--border-radius-base);
+
+  background-color: var(--color-background);
+
+  color: var(--color-text-main);
+
+}
+
+.form-control:focus {
+
+  outline: none;
+
+  border-color: var(--color-primary);
+
+}
