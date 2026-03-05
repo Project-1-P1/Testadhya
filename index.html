@@ -4,16 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title id="siteTitle"></title>
-<link rel="stylesheet" href="/css/base.css">
-<link rel="stylesheet" href="/css/layout.css">
-<link rel="stylesheet" href="/css/components.css">
-<link rel="stylesheet" href="/css/animations.css">
-<link rel="stylesheet" href="/css/visual/color-schemes.css">
-<link rel="stylesheet" href="/css/visual/typography.css">
-<link rel="stylesheet" href="/css/visual/hero-layouts.css">
-<link rel="stylesheet" href="/css/visual/gallery-layouts.css">
-<link rel="stylesheet" href="/css/visual/decorative-layers.css">
-<link rel="stylesheet" href="/css/visual/spacing-modes.css">
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/layout.css">
+<link rel="stylesheet" href="./css/components.css">
+<link rel="stylesheet" href="./css/animations.css">
+<link rel="stylesheet" href="./css/visual/color-schemes.css">
+<link rel="stylesheet" href="./css/visual/typography.css">
+<link rel="stylesheet" href="./css/visual/hero-layouts.css">
+<link rel="stylesheet" href="./css/visual/gallery-layouts.css">
+<link rel="stylesheet" href="./css/visual/decorative-layers.css">
+<link rel="stylesheet" href="./css/visual/spacing-modes.css">
 </head>
 <body>
 <header id="headerNav" class="section" role="banner">
@@ -106,21 +106,35 @@
 <div class="section-inner sponsors-wrapper"></div>
 </div>
 </section>
+
 <section id="video" class="section optional-section" aria-hidden="true" hidden>
 <div class="container">
-<div class="section-inner video-wrapper"></div>
+<div class="section-inner video-wrapper" data-adhya-addon="video-container">
+<video data-adhya-addon="video-element"></video>
+<button data-adhya-addon="video-play">Play</button>
+<button data-adhya-addon="video-mute">Mute</button>
+</div>
 </div>
 </section>
+
 <section id="timeline" class="section optional-section" aria-hidden="true" hidden>
 <div class="container">
 <div class="section-inner timeline-wrapper"></div>
 </div>
 </section>
+
 <section id="guestUpload" class="section optional-section" aria-hidden="true" hidden>
 <div class="container">
-<div class="section-inner guestupload-wrapper"></div>
+<div class="section-inner guestupload-wrapper" data-adhya-addon="guestupload-container">
+<form data-adhya-addon="guestupload-form">
+<input type="file" data-adhya-addon="guestupload-input">
+<button type="submit" data-adhya-addon="guestupload-submit">Upload</button>
+<div data-adhya-addon="guestupload-feedback"></div>
+</form>
+</div>
 </div>
 </section>
+
 <section id="anniversary" class="section optional-section" aria-hidden="true" hidden>
 <div class="container">
 <div class="section-inner anniversary-wrapper"></div>
@@ -146,18 +160,22 @@
 </div>
 </div>
 </section>
+
 <section id="rsvp" class="section optional-section" aria-labelledby="rsvpTitle" aria-hidden="true" hidden>
 <div class="container">
-<div class="section-inner rsvp-wrapper">
+<div class="section-inner rsvp-wrapper" data-adhya-addon="rsvp-container">
 <h2 id="rsvpTitle"></h2>
-<form id="rsvpForm" novalidate>
+<form id="rsvpForm" data-adhya-addon="rsvp-form" novalidate>
 <fieldset>
 <legend id="rsvpLegend"></legend>
 </fieldset>
+<button type="submit" data-adhya-addon="rsvp-submit">Submit</button>
+<div data-adhya-addon="rsvp-feedback"></div>
 </form>
 </div>
 </div>
 </section>
+
 </main>
 <footer id="footer" class="section" role="contentinfo">
 <div class="container">
@@ -166,19 +184,19 @@
 </div>
 </div>
 </footer>
-<script src="/js/config.js" defer></script>
-<script src="/js/core/layout.js" defer></script>
-<script src="/js/core/countdown.js" defer></script>
-<script src="/js/core/gallery.js" defer></script>
-<script src="/js/core/schedule.js" defer></script>
-<script src="/js/core/map.js" defer></script>
-<script src="/js/plans/basic.js" defer></script>
-<script src="/js/plans/premium.js" defer></script>
-<script src="/js/plans/royal.js" defer></script>
-<script src="/js/addons/music.js" defer></script>
-<script src="/js/addons/rsvp.js" defer></script>
-<script src="/js/addons/video.js" defer></script>
-<script src="/js/addons/guestupload.js" defer></script>
-<script src="/js/main.js" defer></script>
+<script src="./js/config.js" defer></script>
+<script src="./js/core/layout.js" defer></script>
+<script src="./js/core/countdown.js" defer></script>
+<script src="./js/core/gallery.js" defer></script>
+<script src="./js/core/schedule.js" defer></script>
+<script src="./js/core/map.js" defer></script>
+<script src="./js/plans/basic.js" defer></script>
+<script src="./js/plans/premium.js" defer></script>
+<script src="./js/plans/royal.js" defer></script>
+<script src="./js/addons/music.js" defer></script>
+<script src="./js/addons/rsvp.js" defer></script>
+<script src="./js/addons/video.js" defer></script>
+<script src="./js/addons/guestupload.js" defer></script>
+<script src="./js/main.js" defer></script>
 </body>
-                              </html>
+  </html>
