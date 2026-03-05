@@ -1,0 +1,130 @@
+:root {
+
+  --color-primary: #222222;
+
+  --color-secondary: #555555;
+
+  --color-accent: #888888;
+
+  --color-background: #ffffff;
+
+  --color-surface: #f9f9f9;
+
+  --color-text-main: #111111;
+
+  --color-text-muted: #666666;
+
+  --color-border: #e0e0e0;
+
+  --color-primary-contrast: #ffffff;
+
+  --font-family-base: system-ui, -apple-system, sans-serif;
+
+  --font-family-heading: system-ui, -apple-system, sans-serif;
+
+  
+
+  --line-height-heading: 1.2;
+
+  --line-height-body: 1.6;
+
+  
+
+  --spacing-base: 1rem;
+
+  --spacing-section: 4rem;
+
+  --spacing-container: 1rem;
+
+  
+
+  --animation-duration: 150ms;
+
+  --animation-easing: ease;
+
+  
+
+  --border-radius-base: 0px;
+
+}
+
+html {
+
+  box-sizing: border-box;
+
+  font-size: 16px;
+
+  scroll-behavior: smooth;
+
+}
+
+*, *::before, *::after {
+
+  box-sizing: inherit;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+body {
+
+  font-family: var(--font-family-base);
+
+  background-color: var(--color-background);
+
+  color: var(--color-text-main);
+
+  line-height: var(--line-height-body);
+
+  -webkit-font-smoothing: antialiased;
+
+}
+
+h1, .h1,
+
+h2, .h2,
+h3, .h3 {
+
+  line-height: var(--line-height-heading);
+
+}
+
+img, 
+
+picture, 
+
+video, 
+
+canvas, 
+
+svg {
+
+  display: block;
+
+  max-width: 100%;
+
+  height: auto;
+
+}
+
+a {
+
+  color: inherit;
+
+  text-decoration: none;
+
+}
+
+ul, ol {
+
+  list-style: none;
+
+}
+
+button, input, textarea, select {
+
+  font: inherit;
+
+}
