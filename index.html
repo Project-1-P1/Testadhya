@@ -1,366 +1,184 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title id="siteTitle"></title>
-
-<link rel="stylesheet" href="Testadhya/css/base.css">
-
-<link rel="stylesheet" href="Testadhya/css/layout.css">
-
-<link rel="stylesheet" href="Testadhya/css/components.css">
-
-<link rel="stylesheet" href="Testadhya/css/animations.css">
-
-<link rel="stylesheet" href="Testadhya/css/visual/color-schemes.css">
-
-<link rel="stylesheet" href="Testadhya/css/visual/typography.css">
-
-<link rel="stylesheet" href="Testadhya/css/visual/hero-layouts.css">
-
-<link rel="stylesheet" href="Testadhya/css/visual/gallery-layouts.css">
-
-<link rel="stylesheet" href="Testadhya/css/visual/decorative-layers.css">
-
-<link rel="stylesheet" href="Testadhya/css/visual/spacing-modes.css">
-
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/layout.css">
+<link rel="stylesheet" href="/css/components.css">
+<link rel="stylesheet" href="/css/animations.css">
+<link rel="stylesheet" href="/css/visual/color-schemes.css">
+<link rel="stylesheet" href="/css/visual/typography.css">
+<link rel="stylesheet" href="/css/visual/hero-layouts.css">
+<link rel="stylesheet" href="/css/visual/gallery-layouts.css">
+<link rel="stylesheet" href="/css/visual/decorative-layers.css">
+<link rel="stylesheet" href="/css/visual/spacing-modes.css">
 </head>
-
 <body>
-
 <header id="headerNav" class="section" role="banner">
-
 <div class="container">
-
 <div class="nav-wrapper">
-
 <div id="logoText"></div>
-
-<button type="button" id="navToggle" aria-expanded="false" aria-controls="mainNavigation" aria-
-
-label="Toggle Navigation"></button>
-
+<button type="button" id="navToggle" aria-expanded="false" aria-controls="mainNavigation" aria-label="Toggle Navigation"></button>
 <nav id="mainNavigation" role="navigation" aria-label="Main Navigation">
-
 <ul id="primaryNavigationList">
-
 <li><a href="#hero"></a></li>
-
 <li><a href="#countdown"></a></li>
-
 <li><a href="#about"></a></li>
-
 <li><a href="#events"></a></li>
-
 <li><a href="#gallery"></a></li>
-
 <li><a href="#location"></a></li>
-
 <li><a href="#rsvp"></a></li>
-
 </ul>
-
 </nav>
-
 </div>
-
 </div>
-
 </header>
-
 <main id="mainContent" role="main" aria-label="Primary Content">
-
 <header id="hero" class="section">
-
 <div class="hero-layer"></div>
-
 <div class="hero-media"></div>
-
 <div class="hero-overlay"></div>
-
 <div class="container">
-
 <div class="hero-content">
-
 <h1 id="coupleNames"></h1>
-
 <p id="eventDate"></p>
-
 </div>
-
-  </div>
-  </header>
-
+</div>
+</header>
 <section id="countdown" class="section">
-
 <div class="container">
-
 <div class="countdown-wrapper" id="countdownTimer" role="timer" aria-live="polite">
-
 <div class="countdown-block" role="group">
-
 <span id="countdownDays" class="countdown-value"></span>
-
 <span class="countdown-label"></span>
-
 </div>
-
 <div class="countdown-block" role="group">
-
 <span id="countdownHours" class="countdown-value"></span>
-
 <span class="countdown-label"></span>
-
 </div>
-
 <div class="countdown-block" role="group">
-
 <span id="countdownMinutes" class="countdown-value"></span>
-
 <span class="countdown-label"></span>
-
 </div>
-
 <div class="countdown-block" role="group">
-
 <span id="countdownSeconds" class="countdown-value"></span>
-
 <span class="countdown-label"></span>
-
 </div>
-
 </div>
-
 </div>
-
 </section>
-
 <section id="about" class="section" aria-labelledby="aboutTitle" aria-live="off">
-
 <div class="container">
-
 <div class="about-wrapper">
-
 <h2 id="aboutTitle"></h2>
-
 <p id="aboutDescription"></p>
-
 </div>
-
 </div>
-
 </section>
-
 <section id="events" class="section" aria-live="off">
-
 <div class="container">
-
 <div class="event-list" id="eventList">
-
 <article class="event-item template" hidden data-template="event">
-
 <div class="event-content">
-
 <h3 class="event-title"></h3>
-
 <p class="event-date"></p>
-
 <p class="event-time"></p>
-
 <a class="event-location-btn"></a>
-
 </div>
-
 </article>
-
 </div>
-
 </div>
-
 </section>
-
 <section id="gallery" class="section optional-section" aria-hidden="true" hidden>
-
 <div class="container">
-
 <div class="section-inner gallery-wrapper"></div>
-
 </div>
-
 </section>
-
 <section id="specialGuests" class="section optional-section" aria-hidden="true" hidden>
-
 <div class="container">
-
 <div class="section-inner guests-wrapper"></div>
-
 </div>
-
 </section>
-
 <section id="sponsors" class="section optional-section" aria-hidden="true" hidden>
-
 <div class="container">
-
 <div class="section-inner sponsors-wrapper"></div>
+</div>
 </section>
-
 <section id="video" class="section optional-section" aria-hidden="true" hidden>
-
 <div class="container">
-
 <div class="section-inner video-wrapper"></div>
-
 </div>
-
 </section>
-
 <section id="timeline" class="section optional-section" aria-hidden="true" hidden>
-
 <div class="container">
-
 <div class="section-inner timeline-wrapper"></div>
-
 </div>
-
 </section>
-
 <section id="guestUpload" class="section optional-section" aria-hidden="true" hidden>
-
 <div class="container">
-
 <div class="section-inner guestupload-wrapper"></div>
-
 </div>
-
 </section>
-
 <section id="anniversary" class="section optional-section" aria-hidden="true" hidden>
-
 <div class="container">
-
 <div class="section-inner anniversary-wrapper"></div>
-
 </div>
-
 </section>
-
 <section id="memoryArchive" class="section optional-section" aria-hidden="true" hidden>
-
 <div class="container">
-
 <div class="section-inner archive-wrapper"></div>
-
 </div>
-
 </section>
-
 <section id="accountAccess" class="section optional-section" aria-hidden="true" hidden>
-
 <div class="container">
-
 <div class="section-inner account-wrapper"></div>
-
 </div>
-
 </section>
-
 <section id="location" class="section" aria-labelledby="locationTitle" aria-live="off">
-
 <div class="container">
-
 <div class="location-wrapper">
-
 <h2 id="locationTitle"></h2>
-
 <div class="map-wrapper">
-
 <div id="locationMap" aria-label="Event Location Map"></div>
-
 </div>
-
 </div>
-
 </div>
-
 </section>
-
-<section id="rsvp" class="section optional-section" aria-labelledby="rsvpTitle" aria-hidden="true"
-
-hidden>
-
+<section id="rsvp" class="section optional-section" aria-labelledby="rsvpTitle" aria-hidden="true" hidden>
 <div class="container">
-
 <div class="section-inner rsvp-wrapper">
-
 <h2 id="rsvpTitle"></h2>
-
 <form id="rsvpForm" novalidate>
-
 <fieldset>
-
 <legend id="rsvpLegend"></legend>
-
 </fieldset>
-
 </form>
-
 </div>
-
 </div>
-
 </section>
-
 </main>
-
 <footer id="footer" class="section" role="contentinfo">
-
 <div class="container">
-
 <div class="footer-wrapper">
-
 <p id="footerText"></p>
 </div>
-
 </div>
-
 </footer>
-
-<script src="Testadhya/js/config.js" defer></script>
-
-<script src="Testadhya/js/core/layout.js" defer></script>
-
-<script src="Testadhya/js/core/countdown.js" defer></script>
-
-<script src="Testadhya/js/core/gallery.js" defer></script>
-
-<script src="Testadhya/js/core/schedule.js" defer></script>
-
-<script src="Testadhya/js/core/map.js" defer></script>
-
-<script src="Testadhya/js/plans/basic.js" defer></script>
-
-<script src="Testadhya/js/plans/premium.js" defer></script>
-
-<script src="Testadhya/js/plans/royal.js" defer></script>
-
-<script src="Testadhya/js/addons/music.js" defer></script>
-
-<script src="Testadhya/js/addons/rsvp.js" defer></script>
-
-<script src="Testadhya/js/addons/video.js" defer></script>
-
-<script src="Testadhya/js/addons/guestupload.js" defer></script>
-
-<script src="Testadhya/js/main.js" defer></script>
-
+<script src="/js/config.js" defer></script>
+<script src="/js/core/layout.js" defer></script>
+<script src="/js/core/countdown.js" defer></script>
+<script src="/js/core/gallery.js" defer></script>
+<script src="/js/core/schedule.js" defer></script>
+<script src="/js/core/map.js" defer></script>
+<script src="/js/plans/basic.js" defer></script>
+<script src="/js/plans/premium.js" defer></script>
+<script src="/js/plans/royal.js" defer></script>
+<script src="/js/addons/music.js" defer></script>
+<script src="/js/addons/rsvp.js" defer></script>
+<script src="/js/addons/video.js" defer></script>
+<script src="/js/addons/guestupload.js" defer></script>
+<script src="/js/main.js" defer></script>
 </body>
-
-</html>
+                              </html>
