@@ -1,0 +1,69 @@
+body.deco-mandalaSoft section::before {
+
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  width: 100%;
+
+  height: 100%;
+
+  transform: translate(-50%, -50%);
+
+  background-image: radial-gradient(circle, var(--color-primary) 1px, var(--color-background) 1px);
+
+  background-size: 20px 20px;
+
+  opacity: 0.03;
+
+  pointer-events: none;
+
+  z-index: 0;
+
+}
+
+body.deco-mandalaSoft .card,
+
+body.deco-mandalaSoft .event-item {
+
+  border-radius: calc(var(--border-radius-base) + 12px);
+
+}
+
+body.deco-borderFrame .container {
+
+  outline: 4px double var(--color-primary);
+
+  outline-offset: -4px;
+
+}
+
+body.deco-borderFrame img {
+
+  outline: 2px solid var(--color-primary);
+
+  outline-offset: -4px;
+
+}
+
+body.deco-goldFoil .btn,
+
+body.deco-goldFoil .h1,
+
+body.deco-goldFoil .h2 {
+
+  background-image: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+
+  color: var(--color-primary-contrast, var(--color-background));
+
+}
+
+body.deco-goldFoil .btn {
+
+  border: 1px solid var(--color-primary);
+
+}
